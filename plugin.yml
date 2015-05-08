@@ -1,0 +1,22 @@
+name: RouletteRemake
+main: RouletteRemake\Main
+version: 0.1.0
+api: [1.10.0]
+
+commands:
+  roulette:
+    usage: "/rr"
+    description: "Play a Russian Roulette game!"
+    permission: roulette.command.rr
+  RouletteInfo:
+    usage: "/rrinfo"
+    decription: "Tells the user about Roulette Remake"
+    permission: roulette.command.rrinfo
+
+permissions:
+  roulette.command.rr:
+    default: op
+    description: "Allows the player to play a Russian Roulette game"
+  roulette.command.rrinfo:
+    default: true
+    description: :Allows the player to run the RouletteInfo command"
