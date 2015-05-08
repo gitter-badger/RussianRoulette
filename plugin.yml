@@ -1,5 +1,5 @@
-name: RouletteRemake
-main: RouletteRemake\Main
+name: RussianRoulette
+main: RussianRoulette\Main
 version: 0.1.0
 api: 1.10.0
 commands:
