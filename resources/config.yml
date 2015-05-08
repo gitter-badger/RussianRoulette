@@ -1,4 +1,4 @@
 #Default config file for RouletteRemake
-#How many chambers are in the gun? You can have up to 2-5 chambers.
-Chambers: 5
+#How many chambers are in the gun? You can have up to 2-6 chambers.
+Chambers: 6
 #There will be more chambers available in future updates.
