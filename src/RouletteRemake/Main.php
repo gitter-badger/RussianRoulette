@@ -25,7 +25,7 @@ class Main extends PluginBase{
 			$chambers = $this->getConfig()->get('Chambers');
 			if($chambers == 1){
 				$sender->sendMessage("You don't have enough chambers!");
-				$this->getLogger()->info(TextFormat::RED . "Error: You don't have enough chambers!");
+				$this->getLogger()->info(TextFormat::RED . "[RouletteRemake] You don't have enough chambers!");
 			}elseif($chambers == 2){
 				$chmb = array("1st", "2nd");
 				if($sender instanceof Player){
@@ -38,7 +38,7 @@ class Main extends PluginBase{
 							$sender->sendMessage("Unlucky");
 						}
 					}
-			}else{
+				}else{
 					$sender->sendMessage("This command only works in-game!");
 				}
 			}elseif($chambers == 3){
@@ -55,7 +55,7 @@ class Main extends PluginBase{
 					}else{
 						$sender->sendMessage("You don't have permission to do that!");
 					}
-			}else{
+				}else{
 					$sender->sendMessage("This command only works in-game!");
 				}
 				
@@ -73,7 +73,7 @@ class Main extends PluginBase{
 					}else{
 						$sender->sendMessage("You don't have permission to do that!");
 					}
-			}else{
+				}else{
 					$sender->sendMessage("This command only works in-game!");
 				}
 			
@@ -92,12 +92,12 @@ class Main extends PluginBase{
 					}else{
 						$sender->sendMessage("You don't have permission to do that!");
 					}
-			}else{
+				}else{
 				$sender->sendMessage("[RouletteRamake] You must run that command in-game!");
-			}
+				}
 			}elseif($chambers <= 6){
-			$sender->sendMessage("You have too many chambers!");
-			$this->getLogger->info(TextFormeat::RED . "[RouletteRamake] You have too many chambers! Please change the ammount of chambers in the config file.");
+				$sender->sendMessage("You have too many chambers!");
+				$this->getLogger->info(TextFormeat::RED . "[RouletteRamake] You have too many chambers! Please change the ammount of chambers in the config file.");
 			}
 		}elseif($command->getName() === "rrinfo"){
 			if($sender instanceof Player){
