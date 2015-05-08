@@ -46,7 +46,7 @@ class Main extends PluginBase{
 					if($sender->hasPermission("roulette.command.rr")){
 						$chmb = array("1st", "2nd", "3rd");
 						$bullet = $chmb[array_rand($chmb)];
-						if($bullet != $chmb[2]{
+						if($bullet != $chmb[2]){
 							$sender->sendMessage("You got lucky");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
@@ -64,7 +64,7 @@ class Main extends PluginBase{
 					if($sender->hasPermission("roulette.command.rr")){
 						$chmb = array("1st", "2nd", "3rd", "4th");
 						$bullet = $chmb[array_rand($chmb)];
-						if($bullet != $chmb[2]{
+						if($bullet != $chmb[2]){
 							$sender->sendMessage("You got lucky");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
@@ -83,7 +83,7 @@ class Main extends PluginBase{
 					if($sender->hasPermission("roulette.command.rr")){
 						$chmb = array("1st", "2nd", "3rd", "4th", "5th");
 						$bullet = $chmb[array_rand($chmb)];
-						if($bullet != $chmb[2]{
+						if($bullet != $chmb[2]){
 							$sender->sendMessage("You got lucky");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
