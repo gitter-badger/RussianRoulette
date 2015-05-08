@@ -42,7 +42,7 @@ class Main extends PluginBase{
 				if($sender instanceof Player){
 					if($sender->hasPermission("roulette.command.rr")){
 						$bullet = $chmb[array_rand($chmb)];
-						if($bullet != $chmb[2]{
+						if($bullet != $chmb[2]){
 							$sender->sendMessage("You got lucky");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
