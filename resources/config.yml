@@ -1,4 +1,3 @@
-#Default config file for RouletteRemake
-#How many chambers are in the gun? You can have up to 2-6 chambers.
+# Config file for RussianRoulette.
+# How many chambers are in the gun? Minimum: 2; Default: 6;
 Chambers: 6
-#There will be more chambers available in future updates.

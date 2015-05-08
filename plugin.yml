@@ -1,20 +1,21 @@
 name: RussianRoulette
 main: RussianRoulette\Main
-version: 0.1.0
-api: 1.10.0
+version: 2.0.0
+api: 1.0.0
 commands:
-  roulette:
-    usage: /rr
-    description: Play a Russian Roulette game!
-    permission: roulette.command.rr
-  RouletteInfo:
-    usage: /rrinfo
-    decription: Tells the user about Roulette Remake
-    permission: roulette.command.rrinfo
+  bang:
+    usage: /bang
+    description: "Play a Russian Roulette game!"
+    permission: russianroulette.command.bang
 permissions:
-  roulette.command.rr:
-    default: op
-    description: Allows the player to play a Russian Roulette game
-  roulette.command.rrinfo:
-    default: true
-    description: Allows the player to run the RouletteInfo command
+  russianroulette:
+    default: false
+    description: "Allows access to all RussianRoulette features."
+    children:
+      russianroulette.command:
+        default: false
+        description: "Allows access to all RussianRoulette commands."
+        children:
+          russianroulette.command.bang:
+            default: true
+            description: "Allows access to the bang command."
