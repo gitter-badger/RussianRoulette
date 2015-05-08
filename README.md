@@ -1,2 +1,2 @@
-# RouletteRemake_v0.1.0
+# RouletteRemake
 A remake of the outdated RussianRoulette remake plugin on PocketMine-MP (Not done)
