@@ -1,0 +1,3 @@
+I keep getting 
+Parse error: syntax error, unexpected ';' in /home/max/plugins/RouletteRamake_v0.1.0/src/RouletteRemake/Main.php on line 46
+when i test it on my server
