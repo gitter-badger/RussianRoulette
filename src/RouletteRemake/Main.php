@@ -32,10 +32,10 @@ class Main extends PluginBase{
 					if($sender->hasPermission("roulette.command.rr")){
 						$bullet = $chmb[array_rand($chmb)];
 						if($bullet != $chmb[2]){
-							$sender->sendMessage("You got lucky");
+							$sender->sendMessage("You got lucky...");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
-							$sender->sendMessage("Unlucky");
+							$sender->sendMessage("Unlucky...");
 						}
 					}
 				}else{
@@ -47,10 +47,10 @@ class Main extends PluginBase{
 						$chmb = array("1st", "2nd", "3rd");
 						$bullet = $chmb[array_rand($chmb)];
 						if($bullet != $chmb[2]){
-							$sender->sendMessage("You got lucky");
+							$sender->sendMessage("You got lucky...");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
-							$sender->sendMessage("Unlucky");
+							$sender->sendMessage("Unlucky...");
 						}
 					}else{
 						$sender->sendMessage("You don't have permission to do that!");
@@ -65,10 +65,10 @@ class Main extends PluginBase{
 						$chmb = array("1st", "2nd", "3rd", "4th");
 						$bullet = $chmb[array_rand($chmb)];
 						if($bullet != $chmb[2]){
-							$sender->sendMessage("You got lucky");
+							$sender->sendMessage("You got lucky...");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
-							$sender->sendMessage("Unlucky");
+							$sender->sendMessage("Unlucky...");
 						}
 					}else{
 						$sender->sendMessage("You don't have permission to do that!");
@@ -84,10 +84,10 @@ class Main extends PluginBase{
 						$chmb = array("1st", "2nd", "3rd", "4th", "5th");
 						$bullet = $chmb[array_rand($chmb)];
 						if($bullet != $chmb[2]){
-							$sender->sendMessage("You got lucky");
+							$sender->sendMessage("You got lucky...");
 						}elseif($bullet == $chmb[2]){
 							$sender->setHealth(0);
-							$sender->sendMessage("Unlucky");
+							$sender->sendMessage("Unlucky...");
 						}
 					}else{
 						$sender->sendMessage("You don't have permission to do that!");
@@ -95,10 +95,31 @@ class Main extends PluginBase{
 				}else{
 				$sender->sendMessage("[RouletteRamake] You must run that command in-game!");
 				}
-			}elseif($chambers <= 6){
-				$sender->sendMessage("You have too many chambers!");
-				$this->getLogger->info(TextFormeat::RED . "[RouletteRamake] You have too many chambers! Please change the ammount of chambers in the config file.");
+				
+				
+			}elseif($chambers == 6){
+				if($sender instanceof Player){
+					if($sender->hasPermission("roulette.command.rr")){
+						$chmb = array("1st", "2nd", "3rd", "4th", "6th");
+						$bullet = $chmb[array_rand($chmb)];
+						if($bullet != $chmb[2]){
+							$sender->sendMessage("You got lucky...");
+						}else{
+							$sender->setHealth(0);
+							$sender->sendMessage("Unlucky...")
+						}
+					}else{
+						$sender->sendMessage("You don't have permission to do that!")
+					}
+				}else{
+					$sender->sendMessage("[RouletteRemake] You must run that command in-game")
+				}
+			}elseif($chambers <= 7){
+				$sender->sendMessage("You have too many chambers!")
+				$this->getLogger->info(TextFormat::RED . "[RouletteRamake] You have too many chambers! Please change this in the config file!")
 			}
+			
+			
 		}elseif($command->getName() === "rrinfo"){
 			if($sender instanceof Player){
 				if($sender hasPermission("roulette.command.rrinfo"){
