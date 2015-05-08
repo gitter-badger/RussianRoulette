@@ -1,10 +1,9 @@
 <?php
 
-namespace RouletteRemake\Main;
+namespace RussianRoulette\Main;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\utils\TextFormat;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase {
