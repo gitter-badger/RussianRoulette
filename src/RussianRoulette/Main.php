@@ -5,6 +5,7 @@ namespace RussianRoulette\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\Config;
+use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase{
 	
