@@ -5,17 +5,17 @@ api: 1.0.0
 commands:
  bang:
   usage: /bang
-  description: "Play a Russian Roulette game!"
+  description: Plays a Russian Roulette game
   permission: russianroulette.command.bang
 permissions:
  russianroulette:
   default: false
-  description: "Allows access to all RussianRoulette features."
+  description: Allows access of all RussianRoulette features
    children:
     russianroulette.command:
      default: false
-     description: "Allows access to all RussianRoulette commands."
+     description: Allows usage of all RussianRoulette commands
      children:
       russianroulette.command.bang:
        default: true
-       description: "Allows access to the bang command."
+       description: "Allows usage of /bang
