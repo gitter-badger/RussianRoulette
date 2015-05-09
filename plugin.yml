@@ -3,19 +3,19 @@ main: RussianRoulette\Main
 version: 2.0.0
 api: 1.0.0
 commands:
-  bang:
-    usage: /bang
-    description: "Play a Russian Roulette game!"
-    permission: russianroulette.command.bang
+bang:
+ usage: /bang
+ description: "Play a Russian Roulette game!"
+ permission: russianroulette.command.bang
 permissions:
-  russianroulette:
-    default: false
-    description: "Allows access to all RussianRoulette features."
-    children:
-      russianroulette.command:
-        default: false
-        description: "Allows access to all RussianRoulette commands."
-        children:
-          russianroulette.command.bang:
-            default: true
-            description: "Allows access to the bang command."
+ russianroulette:
+  default: false
+  description: "Allows access to all RussianRoulette features."
+   children:
+    russianroulette.command:
+     default: false
+     description: "Allows access to all RussianRoulette commands."
+     children:
+      russianroulette.command.bang:
+       default: true
+       description: "Allows access to the bang command."
