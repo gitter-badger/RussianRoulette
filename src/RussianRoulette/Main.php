@@ -24,15 +24,15 @@ class Main extends PluginBase{
     	    	}
       	    	$chambers = $this->getConfig()->get("chambers");
             	if($chambers < 2){
-        	    $sender->sendMessage("You don't have enough chambers.");
+        	    $sender->sendMessage(TextFormat::RED."You don't have enough chambers.");
         	    return true;
       	    	}
             	if(mt_rand(1, $chambers) == 1){
             	    $sender->kill();
-        	    $sender->sendMessage("Unlucky...");
+        	    $sender->sendMessage(TextFormat::RED."Unlucky...");
       	    	} 
       	    	else{
-                    $sender->sendMessage("You got lucky...");
+                    $sender->sendMessage(TextFormat::GREEN."You got lucky...");
                     foreach($this->getConfig()->get("commands") as $command){
                     	$this->getServer()->dispatchCommand(new ConsoleCommandSender, str_replace("{player}", $sender->getName(), $command));
                     }
