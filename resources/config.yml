@@ -1,6 +1,6 @@
-#How many chambers are in the gun? minimum: 2 default: 6
 chambers: 6
-#Commands to execute if the player survives, use {player} for player's name
+#Amount of chambers in the "gun" minimum: 2 default: 6
 commands:
+#Commands to execute if the player survives, use {player} for player's name
 - say {player} survived a game of RussianRoulette!
 - give {player} 264 1
