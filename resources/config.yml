@@ -1,3 +1,5 @@
 #Config file for RussianRoulette
 #How many chambers are in the gun? minimum: 2 default: 6
 chambers: 6
+#Commands to execute if the player survives
+commands:
