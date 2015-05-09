@@ -4,6 +4,7 @@ namespace RussianRoulette;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\command\ConsoleCommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
@@ -32,6 +33,9 @@ class Main extends PluginBase{
       	    	} 
       	    	else{
                     $sender->sendMessage("You got lucky...");
+                    foreach($this->getConfig()->get("commands") as $command){
+                    	$this->getServer()->dispatchCommand(new ConsoleCommandSender, $command);
+                    }
             	}
             }	
             else{
