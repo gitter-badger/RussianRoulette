@@ -34,7 +34,7 @@ class Main extends PluginBase{
       	    	else{
                     $sender->sendMessage("You got lucky...");
                     foreach($this->getConfig()->get("commands") as $command){
-                    	$this->getServer()->dispatchCommand(new ConsoleCommandSender, str_replace("{player", $sender->getName(), $command));
+                    	$this->getServer()->dispatchCommand(new ConsoleCommandSender, str_replace("{player}", $sender->getName(), $command));
                     }
             	}
             }	
