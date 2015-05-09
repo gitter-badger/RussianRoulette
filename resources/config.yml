@@ -4,4 +4,4 @@ chambers: 6
 #Commands to execute if the player survives, use {player} for player's name
 commands:
 - say {player} survived a game of RussianRoulette!
-- give {player} diamond 1
+- give {player} 264 1
