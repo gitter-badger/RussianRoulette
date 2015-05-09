@@ -11,11 +11,11 @@ permissions:
  russianroulette:
   default: false
   description: Allows access of all RussianRoulette features
-   children:
-    russianroulette.command:
-     default: false
-     description: Allows usage of all RussianRoulette commands
-     children:
-      russianroulette.command.bang:
-       default: true
-       description: "Allows usage of /bang
+  children:
+   russianroulette.command:
+    default: false
+    description: Allows usage of all RussianRoulette commands
+    children:
+     russianroulette.command.bang:
+      default: true
+      description: Allows usage of /bang
