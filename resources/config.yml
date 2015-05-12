@@ -1,3 +1,4 @@
+#Configuration file for RussianRoulette v2.0.0
 chambers: 6
 #Amount of chambers in the "gun" minimum: 2 default: 6
 commands:
