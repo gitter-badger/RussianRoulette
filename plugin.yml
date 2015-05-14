@@ -5,9 +5,10 @@ api: 1.0.0
 author: PocketCreations Team
 commands:
  bang:
-  usage: /bang
   description: Plays a Russian Roulette game
+  usage: /bang
   permission: russianroulette.command.bang
+  aliases: [b]
 permissions:
  russianroulette:
   default: false
