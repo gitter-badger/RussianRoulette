@@ -1,4 +1,4 @@
 #RussianRoulette 
-[![Gitter chat](https://badges.gitter.im/PocketCreations/RussianRoulette.png)](https://gitter.im/PocketCreations/RussianRoulette
-"Gitter chat")
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/PocketCreations/RussianRoulette?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_conten
+t=badge)
 Rewrite of the outdated RussianRoulette plugin for PocketMine-MP.
